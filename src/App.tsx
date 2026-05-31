@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import './App.css'
 import { Dashboard } from './components/Dashboard'
 import { VendorDetail } from './components/VendorDetail'
@@ -9,13 +9,20 @@ import { calculateAssessment } from './utils/scoring'
 import { loadVendors, resetVendors, saveVendors } from './utils/storage'
 
 type View = { name: 'dashboard' } | { name: 'detail'; vendorId: string } | { name: 'form'; vendorId?: string }
+type Theme = 'dark' | 'light'
 
 const App = () => {
   const [vendors, setVendors] = useState(loadVendors)
   const [view, setView] = useState<View>({ name: 'dashboard' })
   const [message, setMessage] = useState('')
+  const [theme, setTheme] = useState<Theme>(() => localStorage.getItem('vendor-risk-tracker-theme') === 'light' ? 'light' : 'dark')
   const importInput = useRef<HTMLInputElement>(null)
   const selectedVendor = view.name !== 'dashboard' && view.vendorId ? vendors.find((vendor) => vendor.id === view.vendorId) : undefined
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme
+    localStorage.setItem('vendor-risk-tracker-theme', theme)
+  }, [theme])
 
   const persist = (next: Vendor[], nextMessage: string) => {
     setVendors(next)
@@ -77,6 +84,9 @@ const App = () => {
           <input ref={importInput} type="file" accept=".csv,text/csv" hidden onChange={handleImport} />
           <button className="button secondary" onClick={() => exportVendorsCsv(vendors)}>Export CSV</button>
           <button className="button secondary" onClick={handleReset}>Reset demo data</button>
+          <button className="button theme-button" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}>
+            <span aria-hidden="true">{theme === 'dark' ? '☀' : '☾'}</span> {theme === 'dark' ? 'Light mode' : 'Dark mode'}
+          </button>
           <button className="button primary" onClick={() => setView({ name: 'form' })}>+ Add vendor</button>
         </nav>
       </header>

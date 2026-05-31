@@ -12,3 +12,8 @@
 body { margin: 0; min-width: 320px; min-height: 100vh; }
 button, input, select { font: inherit; }
 button { cursor: pointer; }
+
+[data-theme='dark'] {
+  color: #e6edf7;
+  background: #081423;
+}
