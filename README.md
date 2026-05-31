@@ -89,6 +89,8 @@ The included `.github/workflows/deploy.yml` workflow builds and deploys the stat
 
 Vite uses a relative base path, so the build works from a GitHub Pages project URL without hard-coding the repository name.
 
+The production build also copies the compiled static files to the repository root. This keeps the demo compatible with GitHub Pages repositories configured for branch publishing.
+
 ## Future Roadmap
 
 - Add configurable scoring thresholds
