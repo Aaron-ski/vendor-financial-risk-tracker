@@ -1,0 +1,162 @@
+[
+  {
+    "id": "vendor-001",
+    "vendorName": "Atlantic Components LLC",
+    "industry": "Manufacturing",
+    "location": "Virginia",
+    "annualRevenue": 2500000,
+    "yearsInBusiness": 7,
+    "employeeCount": 42,
+    "debtRatio": 0.42,
+    "paymentDelaysPastYear": 2,
+    "revenueTrend": "Growing",
+    "criticality": "High",
+    "lastReviewed": "2026-05-30",
+    "scoreHistory": [
+      { "date": "2025-08-30", "score": 78 },
+      { "date": "2025-11-30", "score": 84 },
+      { "date": "2026-02-28", "score": 88 },
+      { "date": "2026-05-30", "score": 90 }
+    ]
+  },
+  {
+    "id": "vendor-002",
+    "vendorName": "Blue Ridge Logistics",
+    "industry": "Transportation",
+    "location": "North Carolina",
+    "annualRevenue": 890000,
+    "yearsInBusiness": 4,
+    "employeeCount": 18,
+    "debtRatio": 0.58,
+    "paymentDelaysPastYear": 3,
+    "revenueTrend": "Stable",
+    "criticality": "Medium",
+    "lastReviewed": "2026-05-27",
+    "scoreHistory": [
+      { "date": "2025-08-27", "score": 82 },
+      { "date": "2025-11-27", "score": 76 },
+      { "date": "2026-02-27", "score": 74 },
+      { "date": "2026-05-27", "score": 69 }
+    ]
+  },
+  {
+    "id": "vendor-003",
+    "vendorName": "Cedar Office Solutions",
+    "industry": "Business Services",
+    "location": "Maryland",
+    "annualRevenue": 410000,
+    "yearsInBusiness": 1,
+    "employeeCount": 6,
+    "debtRatio": 0.71,
+    "paymentDelaysPastYear": 5,
+    "revenueTrend": "Declining",
+    "criticality": "High",
+    "lastReviewed": "2026-05-29",
+    "scoreHistory": [
+      { "date": "2025-08-29", "score": 68 },
+      { "date": "2025-11-29", "score": 57 },
+      { "date": "2026-02-28", "score": 42 },
+      { "date": "2026-05-29", "score": 25 }
+    ]
+  },
+  {
+    "id": "vendor-004",
+    "vendorName": "Harborview Packaging Co.",
+    "industry": "Packaging",
+    "location": "Delaware",
+    "annualRevenue": 4300000,
+    "yearsInBusiness": 12,
+    "employeeCount": 74,
+    "debtRatio": 0.33,
+    "paymentDelaysPastYear": 0,
+    "revenueTrend": "Growing",
+    "criticality": "Medium",
+    "lastReviewed": "2026-05-19",
+    "scoreHistory": [
+      { "date": "2025-08-19", "score": 92 },
+      { "date": "2025-11-19", "score": 95 },
+      { "date": "2026-02-19", "score": 97 },
+      { "date": "2026-05-19", "score": 100 }
+    ]
+  },
+  {
+    "id": "vendor-005",
+    "vendorName": "Metro IT Support Group",
+    "industry": "Technology",
+    "location": "District of Columbia",
+    "annualRevenue": 620000,
+    "yearsInBusiness": 3,
+    "employeeCount": 11,
+    "debtRatio": 0.47,
+    "paymentDelaysPastYear": 1,
+    "revenueTrend": "Stable",
+    "criticality": "High",
+    "lastReviewed": "2026-05-22",
+    "scoreHistory": [
+      { "date": "2025-08-22", "score": 86 },
+      { "date": "2025-11-22", "score": 83 },
+      { "date": "2026-02-22", "score": 81 },
+      { "date": "2026-05-22", "score": 79 }
+    ]
+  },
+  {
+    "id": "vendor-006",
+    "vendorName": "Summit Safety Equipment",
+    "industry": "Industrial Supplies",
+    "location": "Pennsylvania",
+    "annualRevenue": 1800000,
+    "yearsInBusiness": 9,
+    "employeeCount": 29,
+    "debtRatio": 0.69,
+    "paymentDelaysPastYear": 2,
+    "revenueTrend": "Declining",
+    "criticality": "Low",
+    "lastReviewed": "2026-05-24",
+    "scoreHistory": [
+      { "date": "2025-08-24", "score": 79 },
+      { "date": "2025-11-24", "score": 72 },
+      { "date": "2026-02-24", "score": 66 },
+      { "date": "2026-05-24", "score": 55 }
+    ]
+  },
+  {
+    "id": "vendor-007",
+    "vendorName": "Greenway Cleaning Partners",
+    "industry": "Facilities",
+    "location": "Virginia",
+    "annualRevenue": 730000,
+    "yearsInBusiness": 6,
+    "employeeCount": 36,
+    "debtRatio": 0.39,
+    "paymentDelaysPastYear": 0,
+    "revenueTrend": "Stable",
+    "criticality": "Low",
+    "lastReviewed": "2026-05-14",
+    "scoreHistory": [
+      { "date": "2025-08-14", "score": 90 },
+      { "date": "2025-11-14", "score": 91 },
+      { "date": "2026-02-14", "score": 92 },
+      { "date": "2026-05-14", "score": 92 }
+    ]
+  },
+  {
+    "id": "vendor-008",
+    "vendorName": "Capital Print & Mail",
+    "industry": "Marketing Services",
+    "location": "Maryland",
+    "annualRevenue": 480000,
+    "yearsInBusiness": 8,
+    "employeeCount": 9,
+    "debtRatio": 0.51,
+    "paymentDelaysPastYear": 4,
+    "revenueTrend": "Declining",
+    "criticality": "Medium",
+    "lastReviewed": "2026-05-28",
+    "scoreHistory": [
+      { "date": "2025-08-28", "score": 76 },
+      { "date": "2025-11-28", "score": 68 },
+      { "date": "2026-02-28", "score": 59 },
+      { "date": "2026-05-28", "score": 47 }
+    ]
+  }
+]
